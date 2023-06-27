@@ -1,0 +1,588 @@
+2023-06-19 17:32:19,908:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-19 17:32:19,908:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-19 17:32:19,908:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-19 17:32:19,908:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-19 17:32:19,925:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-06-19 17:32:20,900:INFO:PyCaret ClusteringExperiment
+2023-06-19 17:32:20,900:INFO:Logging name: cluster-default-name
+2023-06-19 17:32:20,900:INFO:ML Usecase: MLUsecase.CLUSTERING
+2023-06-19 17:32:20,900:INFO:version 3.0.2
+2023-06-19 17:32:20,900:INFO:Initializing setup()
+2023-06-19 17:32:20,900:INFO:self.USI: 2cf9
+2023-06-19 17:32:20,900:INFO:self._variable_keys: {'memory', '_available_plots', 'n_jobs_param', '_ml_usecase', 'seed', 'gpu_param', 'X', 'html_param', 'logging_param', 'gpu_n_jobs_param', 'data', 'pipeline', 'exp_id', 'USI', 'exp_name_log', 'idx', 'log_plots_param'}
+2023-06-19 17:32:20,900:INFO:Checking environment
+2023-06-19 17:32:20,900:INFO:python_version: 3.10.11
+2023-06-19 17:32:20,900:INFO:python_build: ('main', 'Jun 17 2023 20:20:01')
+2023-06-19 17:32:20,900:INFO:machine: x86_64
+2023-06-19 17:32:20,900:INFO:platform: macOS-13.4-x86_64-i386-64bit
+2023-06-19 17:32:20,901:INFO:Memory: svmem(total=8589934592, available=2063716352, percent=76.0, used=4193337344, free=226762752, active=1841500160, inactive=1804095488, wired=2351837184)
+2023-06-19 17:32:20,901:INFO:Physical Core: 4
+2023-06-19 17:32:20,901:INFO:Logical Core: 8
+2023-06-19 17:32:20,901:INFO:Checking libraries
+2023-06-19 17:32:20,901:INFO:System:
+2023-06-19 17:32:20,901:INFO:    python: 3.10.11 (main, Jun 17 2023, 20:20:01) [Clang 14.0.3 (clang-1403.0.22.14.1)]
+2023-06-19 17:32:20,901:INFO:executable: /Users/antoniobaio/.pyenv/versions/3.10.11/bin/python
+2023-06-19 17:32:20,901:INFO:   machine: macOS-13.4-x86_64-i386-64bit
+2023-06-19 17:32:20,901:INFO:PyCaret required dependencies:
+2023-06-19 17:32:20,901:INFO:                 pip: 23.1.2
+2023-06-19 17:32:20,901:INFO:          setuptools: 65.5.0
+2023-06-19 17:32:20,901:INFO:             pycaret: 3.0.2
+2023-06-19 17:32:20,901:INFO:             IPython: 8.14.0
+2023-06-19 17:32:20,901:INFO:          ipywidgets: 8.0.6
+2023-06-19 17:32:20,901:INFO:                tqdm: 4.65.0
+2023-06-19 17:32:20,901:INFO:               numpy: 1.23.5
+2023-06-19 17:32:20,901:INFO:              pandas: 1.5.3
+2023-06-19 17:32:20,901:INFO:              jinja2: 3.1.2
+2023-06-19 17:32:20,901:INFO:               scipy: 1.10.1
+2023-06-19 17:32:20,901:INFO:              joblib: 1.2.0
+2023-06-19 17:32:20,901:INFO:             sklearn: 1.2.2
+2023-06-19 17:32:20,902:INFO:                pyod: 1.0.9
+2023-06-19 17:32:20,902:INFO:            imblearn: 0.10.1
+2023-06-19 17:32:20,902:INFO:   category_encoders: 2.6.1
+2023-06-19 17:32:20,902:INFO:            lightgbm: 3.3.5
+2023-06-19 17:32:20,902:INFO:               numba: 0.57.0
+2023-06-19 17:32:20,902:INFO:            requests: 2.31.0
+2023-06-19 17:32:20,902:INFO:          matplotlib: 3.7.1
+2023-06-19 17:32:20,902:INFO:          scikitplot: 0.3.7
+2023-06-19 17:32:20,902:INFO:         yellowbrick: 1.5
+2023-06-19 17:32:20,902:INFO:              plotly: 5.15.0
+2023-06-19 17:32:20,902:INFO:             kaleido: 0.2.1
+2023-06-19 17:32:20,902:INFO:         statsmodels: 0.14.0
+2023-06-19 17:32:20,902:INFO:              sktime: 0.17.0
+2023-06-19 17:32:20,902:INFO:               tbats: 1.1.3
+2023-06-19 17:32:20,902:INFO:            pmdarima: 2.0.3
+2023-06-19 17:32:20,902:INFO:              psutil: 5.9.5
+2023-06-19 17:32:20,902:INFO:PyCaret optional dependencies:
+2023-06-19 17:32:20,919:INFO:                shap: Not installed
+2023-06-19 17:32:20,919:INFO:           interpret: Not installed
+2023-06-19 17:32:20,919:INFO:                umap: Not installed
+2023-06-19 17:32:20,919:INFO:    pandas_profiling: Not installed
+2023-06-19 17:32:20,919:INFO:  explainerdashboard: Not installed
+2023-06-19 17:32:20,919:INFO:             autoviz: Not installed
+2023-06-19 17:32:20,919:INFO:           fairlearn: Not installed
+2023-06-19 17:32:20,919:INFO:             xgboost: Not installed
+2023-06-19 17:32:20,919:INFO:            catboost: Not installed
+2023-06-19 17:32:20,919:INFO:              kmodes: Not installed
+2023-06-19 17:32:20,919:INFO:             mlxtend: Not installed
+2023-06-19 17:32:20,920:INFO:       statsforecast: Not installed
+2023-06-19 17:32:20,920:INFO:        tune_sklearn: Not installed
+2023-06-19 17:32:20,920:INFO:                 ray: Not installed
+2023-06-19 17:32:20,920:INFO:            hyperopt: Not installed
+2023-06-19 17:32:20,920:INFO:              optuna: Not installed
+2023-06-19 17:32:20,920:INFO:               skopt: Not installed
+2023-06-19 17:32:20,920:INFO:              mlflow: 2.4.1
+2023-06-19 17:32:20,920:INFO:              gradio: Not installed
+2023-06-19 17:32:20,920:INFO:             fastapi: Not installed
+2023-06-19 17:32:20,920:INFO:             uvicorn: Not installed
+2023-06-19 17:32:20,920:INFO:              m2cgen: Not installed
+2023-06-19 17:32:20,920:INFO:           evidently: Not installed
+2023-06-19 17:32:20,920:INFO:               fugue: Not installed
+2023-06-19 17:32:20,920:INFO:           streamlit: Not installed
+2023-06-19 17:32:20,920:INFO:             prophet: Not installed
+2023-06-19 17:32:20,920:INFO:None
+2023-06-19 17:32:20,920:INFO:Set up data.
+2023-06-19 17:32:20,926:INFO:Set up index.
+2023-06-19 17:32:20,926:INFO:Assigning column types.
+2023-06-19 17:32:20,928:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-06-19 17:32:20,928:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-06-19 17:32:20,928:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-19 17:32:20,929:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-06-19 17:32:20,929:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-19 17:32:20,929:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-06-19 17:32:20,929:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-19 17:32:20,929:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-19 17:32:20,931:INFO:Preparing preprocessing pipeline...
+2023-06-19 17:32:20,932:INFO:Set up simple imputation.
+2023-06-19 17:32:20,932:INFO:Set up feature normalization.
+2023-06-19 17:32:20,954:INFO:Finished creating preprocessing pipeline.
+2023-06-19 17:32:20,961:INFO:Pipeline: Pipeline(memory=FastMemory(location=/var/folders/_t/_x_rzsrx5vd2_mn90dgnz43h0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Alcohol', 'Malic_Acid', 'Ash',
+                                             'Ash_Alcanity', 'Magnesium',
+                                             'Total_Phenols', 'Flavanoids',
+                                             'Nonflavanoid_Phenols',
+                                             'Proanthocyanins',
+                                             'Color_Intensity', 'Hue', 'OD280',
+                                             'Proline'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2023-06-19 17:32:20,961:INFO:Creating final display dataframe.
+2023-06-19 17:32:20,981:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape             (178, 13)
+2   Transformed data shape             (178, 13)
+3         Numeric features                    13
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  cluster-default-name
+14                     USI                  2cf9
+2023-06-19 17:32:20,988:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-19 17:32:20,989:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-19 17:32:20,989:INFO:setup() successfully completed in 0.18s...............
+2023-06-19 17:32:53,309:INFO:Initializing create_model()
+2023-06-19 17:32:53,309:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-06-19 17:32:53,309:INFO:Checking exceptions
+2023-06-19 17:32:53,479:INFO:Importing untrained model
+2023-06-19 17:32:53,486:INFO:K-Means Clustering Imported successfully
+2023-06-19 17:32:53,494:INFO:Fitting Model
+2023-06-19 17:32:53,566:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2023-06-19 17:32:53,721:INFO:KMeans(n_clusters=4, random_state=123)
+2023-06-19 17:32:53,721:INFO:create_models() successfully completed......................................
+2023-06-19 17:32:53,725:INFO:Uploading results into container
+2023-06-19 17:32:53,730:INFO:Uploading model into container now
+2023-06-19 17:32:53,738:INFO:_master_model_container: 1
+2023-06-19 17:32:53,738:INFO:_display_container: 2
+2023-06-19 17:32:53,738:INFO:KMeans(n_clusters=4, random_state=123)
+2023-06-19 17:32:53,738:INFO:create_model() successfully completed......................................
+2023-06-19 17:33:06,654:INFO:gpu_param set to False
+2023-06-19 17:33:06,654:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-19 17:33:06,655:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-19 17:33:13,811:INFO:Initializing create_model()
+2023-06-19 17:33:13,811:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-06-19 17:33:13,811:INFO:Checking exceptions
+2023-06-19 17:33:13,924:INFO:Importing untrained model
+2023-06-19 17:33:13,931:INFO:K-Means Clustering Imported successfully
+2023-06-19 17:33:13,938:INFO:Fitting Model
+2023-06-19 17:33:13,986:INFO:KMeans(n_clusters=4, random_state=123)
+2023-06-19 17:33:13,986:INFO:create_models() successfully completed......................................
+2023-06-19 17:33:13,990:INFO:Uploading results into container
+2023-06-19 17:33:13,993:INFO:Uploading model into container now
+2023-06-19 17:33:14,001:INFO:_master_model_container: 2
+2023-06-19 17:33:14,001:INFO:_display_container: 3
+2023-06-19 17:33:14,002:INFO:KMeans(n_clusters=4, random_state=123)
+2023-06-19 17:33:14,002:INFO:create_model() successfully completed......................................
+2023-06-19 17:33:21,747:INFO:Initializing create_model()
+2023-06-19 17:33:21,748:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, estimator=dbscan, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-06-19 17:33:21,748:INFO:Checking exceptions
+2023-06-19 17:33:21,801:INFO:Importing untrained model
+2023-06-19 17:33:21,805:INFO:Density-Based Spatial Clustering Imported successfully
+2023-06-19 17:33:21,810:INFO:Fitting Model
+2023-06-19 17:33:21,869:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py:528: UserWarning: Traceback (most recent call last):
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py", line 526, in _calculate_unsupervised_metric
+    calculated_metric = score_func(target, labels, **container.args)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 231, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 33, in check_number_of_labels
+    raise ValueError(
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+  warnings.warn(traceback.format_exc())
+
+2023-06-19 17:33:21,870:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py:528: UserWarning: Traceback (most recent call last):
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py", line 526, in _calculate_unsupervised_metric
+    calculated_metric = score_func(target, labels, **container.args)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 290, in calinski_harabasz_score
+    check_number_of_labels(n_labels, n_samples)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 33, in check_number_of_labels
+    raise ValueError(
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+  warnings.warn(traceback.format_exc())
+
+2023-06-19 17:33:21,872:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py:528: UserWarning: Traceback (most recent call last):
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py", line 526, in _calculate_unsupervised_metric
+    calculated_metric = score_func(target, labels, **container.args)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 348, in davies_bouldin_score
+    check_number_of_labels(n_labels, n_samples)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 33, in check_number_of_labels
+    raise ValueError(
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+  warnings.warn(traceback.format_exc())
+
+2023-06-19 17:33:21,874:INFO:DBSCAN(n_jobs=-1)
+2023-06-19 17:33:21,874:INFO:create_models() successfully completed......................................
+2023-06-19 17:33:21,881:INFO:Uploading results into container
+2023-06-19 17:33:21,885:INFO:Uploading model into container now
+2023-06-19 17:33:21,901:INFO:_master_model_container: 3
+2023-06-19 17:33:21,901:INFO:_display_container: 4
+2023-06-19 17:33:21,902:INFO:DBSCAN(n_jobs=-1)
+2023-06-19 17:33:21,902:INFO:create_model() successfully completed......................................
+2023-06-19 17:33:34,100:INFO:Initializing assign_model()
+2023-06-19 17:33:34,101:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=KMeans(n_clusters=4, random_state=123), transformation=False, score=True, verbose=True)
+2023-06-19 17:33:34,101:INFO:Checking exceptions
+2023-06-19 17:33:34,101:INFO:Determining Trained Model
+2023-06-19 17:33:34,101:INFO:Trained Model : K-Means Clustering
+2023-06-19 17:33:34,102:INFO:Copying data
+2023-06-19 17:33:34,103:INFO:(178, 14)
+2023-06-19 17:33:34,103:INFO:assign_model() successfully completed......................................
+2023-06-19 17:33:52,906:INFO:Initializing plot_model()
+2023-06-19 17:33:52,907:INFO:plot_model(plot=cluster, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:33:52,907:INFO:Checking exceptions
+2023-06-19 17:33:52,911:INFO:Preloading libraries
+2023-06-19 17:33:52,912:INFO:Copying training dataset
+2023-06-19 17:33:52,912:INFO:Plot type: cluster
+2023-06-19 17:33:52,913:INFO:SubProcess assign_model() called ==================================
+2023-06-19 17:33:52,914:INFO:Initializing assign_model()
+2023-06-19 17:33:52,914:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=True, verbose=False)
+2023-06-19 17:33:52,914:INFO:Checking exceptions
+2023-06-19 17:33:52,914:INFO:Determining Trained Model
+2023-06-19 17:33:52,914:INFO:Trained Model : K-Means Clustering
+2023-06-19 17:33:52,914:INFO:Copying data
+2023-06-19 17:33:52,939:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-06-19 17:33:52,940:INFO:(178, 14)
+2023-06-19 17:33:52,940:INFO:assign_model() successfully completed......................................
+2023-06-19 17:33:52,940:INFO:SubProcess assign_model() end ==================================
+2023-06-19 17:33:52,943:INFO:Fitting PCA()
+2023-06-19 17:33:52,948:INFO:Sorting dataframe
+2023-06-19 17:33:52,950:INFO:Rendering Visual
+2023-06-19 17:33:54,323:INFO:Visual Rendered Successfully
+2023-06-19 17:33:54,428:INFO:plot_model() successfully completed......................................
+2023-06-19 17:34:10,827:INFO:Initializing plot_model()
+2023-06-19 17:34:10,827:INFO:plot_model(plot=elbow, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:34:10,828:INFO:Checking exceptions
+2023-06-19 17:34:10,832:INFO:Preloading libraries
+2023-06-19 17:34:10,832:INFO:Copying training dataset
+2023-06-19 17:34:10,833:INFO:Plot type: elbow
+2023-06-19 17:34:10,918:INFO:Fitting Model
+2023-06-19 17:34:10,922:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,066:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,095:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,123:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,160:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,198:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,256:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,294:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,339:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:11,957:INFO:Visual Rendered Successfully
+2023-06-19 17:34:12,081:INFO:plot_model() successfully completed......................................
+2023-06-19 17:34:52,814:INFO:Initializing create_model()
+2023-06-19 17:34:52,814:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, estimator=kmeans, num_clusters=3, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-06-19 17:34:52,814:INFO:Checking exceptions
+2023-06-19 17:34:52,865:INFO:Importing untrained model
+2023-06-19 17:34:52,875:INFO:K-Means Clustering Imported successfully
+2023-06-19 17:34:52,881:INFO:Fitting Model
+2023-06-19 17:34:52,926:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:52,963:INFO:KMeans(n_clusters=3, random_state=123)
+2023-06-19 17:34:52,963:INFO:create_models() successfully completed......................................
+2023-06-19 17:34:52,970:INFO:Uploading results into container
+2023-06-19 17:34:52,974:INFO:Uploading model into container now
+2023-06-19 17:34:52,984:INFO:_master_model_container: 4
+2023-06-19 17:34:52,985:INFO:_display_container: 5
+2023-06-19 17:34:52,985:INFO:KMeans(n_clusters=3, random_state=123)
+2023-06-19 17:34:52,986:INFO:create_model() successfully completed......................................
+2023-06-19 17:34:54,940:INFO:Initializing assign_model()
+2023-06-19 17:34:54,940:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=KMeans(n_clusters=3, random_state=123), transformation=False, score=True, verbose=True)
+2023-06-19 17:34:54,940:INFO:Checking exceptions
+2023-06-19 17:34:54,940:INFO:Determining Trained Model
+2023-06-19 17:34:54,940:INFO:Trained Model : K-Means Clustering
+2023-06-19 17:34:54,940:INFO:Copying data
+2023-06-19 17:34:54,942:INFO:(178, 14)
+2023-06-19 17:34:54,942:INFO:assign_model() successfully completed......................................
+2023-06-19 17:34:56,953:INFO:Initializing plot_model()
+2023-06-19 17:34:56,953:INFO:plot_model(plot=elbow, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=3, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:34:56,953:INFO:Checking exceptions
+2023-06-19 17:34:56,957:INFO:Preloading libraries
+2023-06-19 17:34:56,958:INFO:Copying training dataset
+2023-06-19 17:34:56,958:INFO:Plot type: elbow
+2023-06-19 17:34:56,979:INFO:Fitting Model
+2023-06-19 17:34:56,982:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,004:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,026:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,058:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,092:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,128:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,167:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,207:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,245:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-06-19 17:34:57,637:INFO:Visual Rendered Successfully
+2023-06-19 17:34:57,749:INFO:plot_model() successfully completed......................................
+2023-06-19 17:34:59,630:INFO:Initializing plot_model()
+2023-06-19 17:34:59,630:INFO:plot_model(plot=cluster, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=3, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:34:59,630:INFO:Checking exceptions
+2023-06-19 17:34:59,634:INFO:Preloading libraries
+2023-06-19 17:34:59,634:INFO:Copying training dataset
+2023-06-19 17:34:59,634:INFO:Plot type: cluster
+2023-06-19 17:34:59,636:INFO:SubProcess assign_model() called ==================================
+2023-06-19 17:34:59,636:INFO:Initializing assign_model()
+2023-06-19 17:34:59,636:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=KMeans(n_clusters=3, random_state=123), transformation=True, score=True, verbose=False)
+2023-06-19 17:34:59,636:INFO:Checking exceptions
+2023-06-19 17:34:59,636:INFO:Determining Trained Model
+2023-06-19 17:34:59,636:INFO:Trained Model : K-Means Clustering
+2023-06-19 17:34:59,636:INFO:Copying data
+2023-06-19 17:34:59,656:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-06-19 17:34:59,657:INFO:(178, 14)
+2023-06-19 17:34:59,657:INFO:assign_model() successfully completed......................................
+2023-06-19 17:34:59,657:INFO:SubProcess assign_model() end ==================================
+2023-06-19 17:34:59,659:INFO:Fitting PCA()
+2023-06-19 17:34:59,662:INFO:Sorting dataframe
+2023-06-19 17:34:59,663:INFO:Rendering Visual
+2023-06-19 17:34:59,727:INFO:Visual Rendered Successfully
+2023-06-19 17:34:59,847:INFO:plot_model() successfully completed......................................
+2023-06-19 17:35:24,689:INFO:Initializing plot_model()
+2023-06-19 17:35:24,690:INFO:plot_model(plot=cluster, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=3, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:35:24,690:INFO:Checking exceptions
+2023-06-19 17:35:24,698:INFO:Preloading libraries
+2023-06-19 17:35:24,698:INFO:Copying training dataset
+2023-06-19 17:35:24,698:INFO:Plot type: cluster
+2023-06-19 17:35:24,700:INFO:SubProcess assign_model() called ==================================
+2023-06-19 17:35:24,700:INFO:Initializing assign_model()
+2023-06-19 17:35:24,701:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=KMeans(n_clusters=3, random_state=123), transformation=True, score=True, verbose=False)
+2023-06-19 17:35:24,702:INFO:Checking exceptions
+2023-06-19 17:35:24,702:INFO:Determining Trained Model
+2023-06-19 17:35:24,702:INFO:Trained Model : K-Means Clustering
+2023-06-19 17:35:24,702:INFO:Copying data
+2023-06-19 17:35:24,724:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-06-19 17:35:24,725:INFO:(178, 14)
+2023-06-19 17:35:24,725:INFO:assign_model() successfully completed......................................
+2023-06-19 17:35:24,725:INFO:SubProcess assign_model() end ==================================
+2023-06-19 17:35:24,726:INFO:Fitting PCA()
+2023-06-19 17:35:24,730:INFO:Sorting dataframe
+2023-06-19 17:35:24,731:INFO:Rendering Visual
+2023-06-19 17:35:24,818:INFO:Visual Rendered Successfully
+2023-06-19 17:35:24,933:INFO:plot_model() successfully completed......................................
+2023-06-19 17:35:24,933:INFO:Initializing plot_model()
+2023-06-19 17:35:24,933:INFO:plot_model(plot=tsne, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=3, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:35:24,934:INFO:Checking exceptions
+2023-06-19 17:35:24,937:INFO:Preloading libraries
+2023-06-19 17:35:24,937:INFO:Copying training dataset
+2023-06-19 17:35:24,937:INFO:Plot type: tsne
+2023-06-19 17:35:24,939:INFO:SubProcess assign_model() called ==================================
+2023-06-19 17:35:24,940:INFO:Initializing assign_model()
+2023-06-19 17:35:24,940:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=KMeans(n_clusters=3, random_state=123), transformation=True, score=False, verbose=False)
+2023-06-19 17:35:24,940:INFO:Checking exceptions
+2023-06-19 17:35:24,941:INFO:Determining Trained Model
+2023-06-19 17:35:24,941:INFO:Trained Model : K-Means Clustering
+2023-06-19 17:35:24,941:INFO:Copying data
+2023-06-19 17:35:24,962:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-06-19 17:35:24,962:INFO:(178, 14)
+2023-06-19 17:35:24,963:INFO:assign_model() successfully completed......................................
+2023-06-19 17:35:24,963:INFO:SubProcess assign_model() end ==================================
+2023-06-19 17:35:24,964:INFO:Fitting TSNE()
+2023-06-19 17:35:26,073:INFO:Sorting dataframe
+2023-06-19 17:35:26,074:INFO:Rendering Visual
+2023-06-19 17:35:26,187:INFO:Visual Rendered Successfully
+2023-06-19 17:35:26,302:INFO:plot_model() successfully completed......................................
+2023-06-19 17:39:31,148:INFO:Initializing plot_model()
+2023-06-19 17:39:31,149:INFO:plot_model(plot=silhouette, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=3, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:39:31,149:INFO:Checking exceptions
+2023-06-19 17:39:31,180:INFO:Preloading libraries
+2023-06-19 17:39:31,182:INFO:Copying training dataset
+2023-06-19 17:39:31,182:INFO:Plot type: silhouette
+2023-06-19 17:39:31,232:INFO:Fitting Model
+2023-06-19 17:39:31,233:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning:
+
+X does not have valid feature names, but KMeans was fitted with feature names
+
+
+2023-06-19 17:39:31,503:INFO:Visual Rendered Successfully
+2023-06-19 17:39:31,899:INFO:plot_model() successfully completed......................................
+2023-06-19 17:42:55,395:INFO:Initializing create_model()
+2023-06-19 17:42:55,396:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, estimator=dbscan, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-06-19 17:42:55,396:INFO:Checking exceptions
+2023-06-19 17:42:55,504:INFO:Importing untrained model
+2023-06-19 17:42:55,512:INFO:Density-Based Spatial Clustering Imported successfully
+2023-06-19 17:42:55,519:INFO:Fitting Model
+2023-06-19 17:42:55,574:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py:528: UserWarning:
+
+Traceback (most recent call last):
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py", line 526, in _calculate_unsupervised_metric
+    calculated_metric = score_func(target, labels, **container.args)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 117, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 231, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 33, in check_number_of_labels
+    raise ValueError(
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+
+
+2023-06-19 17:42:55,576:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py:528: UserWarning:
+
+Traceback (most recent call last):
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py", line 526, in _calculate_unsupervised_metric
+    calculated_metric = score_func(target, labels, **container.args)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 290, in calinski_harabasz_score
+    check_number_of_labels(n_labels, n_samples)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 33, in check_number_of_labels
+    raise ValueError(
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+
+
+2023-06-19 17:42:55,578:WARNING:/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py:528: UserWarning:
+
+Traceback (most recent call last):
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/pycaret/utils/generic.py", line 526, in _calculate_unsupervised_metric
+    calculated_metric = score_func(target, labels, **container.args)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 348, in davies_bouldin_score
+    check_number_of_labels(n_labels, n_samples)
+  File "/Users/antoniobaio/.pyenv/versions/3.10.11/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 33, in check_number_of_labels
+    raise ValueError(
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+
+
+
+2023-06-19 17:42:55,579:INFO:DBSCAN(n_jobs=-1)
+2023-06-19 17:42:55,579:INFO:create_models() successfully completed......................................
+2023-06-19 17:42:55,583:INFO:Uploading results into container
+2023-06-19 17:42:55,586:INFO:Uploading model into container now
+2023-06-19 17:42:55,594:INFO:_master_model_container: 5
+2023-06-19 17:42:55,594:INFO:_display_container: 6
+2023-06-19 17:42:55,594:INFO:DBSCAN(n_jobs=-1)
+2023-06-19 17:42:55,595:INFO:create_model() successfully completed......................................
+2023-06-19 17:42:55,802:INFO:Initializing assign_model()
+2023-06-19 17:42:55,802:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=DBSCAN(n_jobs=-1), transformation=False, score=True, verbose=True)
+2023-06-19 17:42:55,802:INFO:Checking exceptions
+2023-06-19 17:42:55,802:INFO:Determining Trained Model
+2023-06-19 17:42:55,802:INFO:Trained Model : Density-Based Spatial Clustering
+2023-06-19 17:42:55,802:INFO:Copying data
+2023-06-19 17:42:55,803:INFO:(178, 14)
+2023-06-19 17:42:55,804:INFO:assign_model() successfully completed......................................
+2023-06-19 17:43:14,130:INFO:Initializing plot_model()
+2023-06-19 17:43:14,130:INFO:plot_model(plot=cluster, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=DBSCAN(n_jobs=-1), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:43:14,131:INFO:Checking exceptions
+2023-06-19 17:43:14,135:INFO:Preloading libraries
+2023-06-19 17:43:14,135:INFO:Copying training dataset
+2023-06-19 17:43:14,135:INFO:Plot type: cluster
+2023-06-19 17:43:14,137:INFO:SubProcess assign_model() called ==================================
+2023-06-19 17:43:14,137:INFO:Initializing assign_model()
+2023-06-19 17:43:14,138:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=DBSCAN(n_jobs=-1), transformation=True, score=True, verbose=False)
+2023-06-19 17:43:14,138:INFO:Checking exceptions
+2023-06-19 17:43:14,138:INFO:Determining Trained Model
+2023-06-19 17:43:14,138:INFO:Trained Model : Density-Based Spatial Clustering
+2023-06-19 17:43:14,138:INFO:Copying data
+2023-06-19 17:43:14,159:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-06-19 17:43:14,160:INFO:(178, 14)
+2023-06-19 17:43:14,160:INFO:assign_model() successfully completed......................................
+2023-06-19 17:43:14,160:INFO:SubProcess assign_model() end ==================================
+2023-06-19 17:43:14,162:INFO:Fitting PCA()
+2023-06-19 17:43:14,165:INFO:Sorting dataframe
+2023-06-19 17:43:14,166:INFO:Rendering Visual
+2023-06-19 17:43:14,246:INFO:Visual Rendered Successfully
+2023-06-19 17:43:14,370:INFO:plot_model() successfully completed......................................
+2023-06-19 17:43:14,371:INFO:Initializing plot_model()
+2023-06-19 17:43:14,371:INFO:plot_model(plot=tsne, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=DBSCAN(n_jobs=-1), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, system=True)
+2023-06-19 17:43:14,372:INFO:Checking exceptions
+2023-06-19 17:43:14,377:INFO:Preloading libraries
+2023-06-19 17:43:14,377:INFO:Copying training dataset
+2023-06-19 17:43:14,377:INFO:Plot type: tsne
+2023-06-19 17:43:14,380:INFO:SubProcess assign_model() called ==================================
+2023-06-19 17:43:14,380:INFO:Initializing assign_model()
+2023-06-19 17:43:14,380:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x109a1ef50>, model=DBSCAN(n_jobs=-1), transformation=True, score=False, verbose=False)
+2023-06-19 17:43:14,381:INFO:Checking exceptions
+2023-06-19 17:43:14,381:INFO:Determining Trained Model
+2023-06-19 17:43:14,381:INFO:Trained Model : Density-Based Spatial Clustering
+2023-06-19 17:43:14,381:INFO:Copying data
+2023-06-19 17:43:14,411:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-06-19 17:43:14,411:INFO:(178, 14)
+2023-06-19 17:43:14,411:INFO:assign_model() successfully completed......................................
+2023-06-19 17:43:14,411:INFO:SubProcess assign_model() end ==================================
+2023-06-19 17:43:14,412:INFO:Fitting TSNE()
+2023-06-19 17:43:16,490:INFO:Sorting dataframe
+2023-06-19 17:43:16,491:INFO:Rendering Visual
+2023-06-19 17:43:16,556:INFO:Visual Rendered Successfully
+2023-06-19 17:43:16,705:INFO:plot_model() successfully completed......................................
